@@ -24,6 +24,18 @@ export function Header() {
             Work
           </NavLink>
           <NavLink
+            to="/concepts"
+            className={({ isActive }) =>
+              `text-sm transition-colors ${
+                isActive
+                  ? "text-gray-900 dark:text-gray-100 font-medium"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+              }`
+            }
+          >
+            Concepts
+          </NavLink>
+          <NavLink
             to="/about"
             className={({ isActive }) =>
               `text-sm transition-colors ${
